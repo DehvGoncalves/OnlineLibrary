@@ -1,0 +1,65 @@
+﻿@using ProjetoEmprestimoLivros.Models
+@model IEnumerable<LivrosModel>
+
+<div class="container mt-5">
+    <div class="btn-box d-flex justify-content-between align-items-center mb-3">
+        <h2>Cadastro de livros!</h2>
+        <a class="btn btn-success" asp-controller="Livro" asp-action="Cadastrar" ><i class="bi bi-plus-circle"></i> Cadastrar novo livro</a>
+@*         <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ProjetoEmprestimoLivros</a>
+ *@
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Gênero</th>
+                <th>Quantidade em Estoque</th>
+                <th>Data de cadastro</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                @if (Model.Count() > 0)
+                {
+                    @foreach (var livros in Model)
+                    {
+                        <tr>
+                            @if (livros.Capa != null)
+                            {
+                                <td>
+                                    <img src="Imagem/@livros.Capa" style="width:50px; height: 50px;" />
+                                </td>
+                            }
+                            else
+                            {
+                                <td></td>
+
+                            }
+                            <td><i class="bi bi-people"></i>@livros.Titulo</td>
+                            <td>@livros.Autor</td>
+                            <td>@livros.Genero</td>
+                            <td><i class="bi bi-envelope-at"></i>@livros.QuantidadeEmEstoque</td>
+                            <td><i class="bi bi-calendar"></i>@livros.DataDeCadastro</td>
+                            <td>
+                                <a class="btn btn-warning" href="#"><i class="bi bi-file-earmark-zip"></i> Editar</a>
+                                <a class="btn btn-info" href="#"><i class="bi bi-pencil"></i> Excluir</a>
+                            </td>
+                        </tr>
+
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center">Nenhum livro cadastrado!</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

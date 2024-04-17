@@ -1,0 +1,75 @@
+﻿@using ProjetoEmprestimoLivros.Models.Viagens
+@model IEnumerable<ViagensFeitasModel>
+
+<div class="container mt-5">
+    <!-- Conteúdo da sua página -->
+</div>
+
+
+
+<div class="container mt-5">
+    <div class="btn-box d-flex justify-content-between align-items-center mb-3">
+        <h2>Minhas Viagens realizadas!</h2>
+        <a class="btn btn-success" asp-controller="" asp-action=""><i class="bi bi-emoji-heart-eyes"></i> Cadastrar nova viagem</a>
+        @*         <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ProjetoEmprestimoLivros</a>
+        *@
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Foto</th>
+                <th>Lugar</th>
+                <th>Companhia de viagem</th>
+                <th>Data</th>
+                <th>Hospedagem</th>
+                <th>Valor da hospedagem</th>
+                <th>Quandidade de pessoas</th>
+                <th>Nome das Pessoas</th>
+                <th>Nota</th>
+                <th>DataUpdate</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                @if (Model.Count() > 0)
+                {
+                    @foreach (var viagens in Model)
+                    {
+                        <tr>
+                            <td><i class="bi bi-image"></i>@viagens.Foto</td>
+                            <td><i class="bi bi-geo-alt"></i> @viagens.Lugar</td>
+                            <td>@viagens.CompanhiaDeViagem</td>
+                            <td style="white-space: nowrap;">@viagens.Data.ToString("dd-MM-yyyy")</td>
+                            <td><i class="bi bi-house-heart"></i>@viagens.Hospedagem</td>
+                            <td><i class="bi bi-currency-dollar"></i>@viagens.ValorHospedagem</td>
+                            <td><i class="bi bi"></i>@viagens.QuantidadePessoas</td>
+                            <td><i class="bi bi-people-fill"></i>@viagens.NomePessoas</td>
+                            <td><i class="bi bi"></i>@viagens.Nota</td>
+                            <td style="white-space: nowrap;"><i class="bi bi"></i>@viagens.DataUpdate.ToString("dd-MM-yyyy")</td>
+                            <td style="width: 100px">
+                                <a style="width: 100px; margin-right: 10px;" class="btn btn-warning" href="#"><i class="bi bi-file-earmark-zip"></i> Editar</a>
+                                <a style="width: 100px;" class="btn btn-info" href="#"><i class="bi bi-pencil"></i> Excluir</a>
+                            </td>
+
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center">Nenhuma Viagem cadastrada!</td>
+                    </tr>
+                }
+
+            }
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <img src="https://schmillevitch.com/wp-content/uploads/2020/12/exames-antes-de-viajar.jpg"
+         style=" width: 100%; opacity: 0.1;" alt="Imagem de Fundo">
+</div>
+

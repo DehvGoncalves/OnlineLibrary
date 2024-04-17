@@ -10,6 +10,7 @@ namespace ProjetoEmprestimoLivros.Data
         {
         }
         public DbSet<Models.LivrosModel> Livros { get; set; }
+        public DbSet<Models.Viagens.ViagensFeitasModel> ViagensFeitas { get; set; }
     }
 }
 

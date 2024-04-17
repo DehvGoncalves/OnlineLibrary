@@ -10,16 +10,5 @@ namespace ProjetoEmprestimoLivros.Controllers
         {
             return View();
         }
-
-        public IActionResult Apresentacao()
-        {
-            return View();
-        }
-
-        public IActionResult PoliticaPrivacidade()
-        {
-            return View();
-        }
-
     }
 }
