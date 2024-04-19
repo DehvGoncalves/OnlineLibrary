@@ -1,0 +1,289 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ProjetoEmprestimoLivros.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ProjetoEmprestimoLivros.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\Imagens\\1200x630wa.png63aa9ef6-f779-4d65-8708-82fa9aaefdd201.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\1200x630wa.png63aa9ef6-f779-4d65-8708-82fa9aaefdd201.jpg"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\Imagens\\2c90fe16368985f13775e541ee756156.jpg51c7deb4-0276-4a84-8e27-7e97209fe386124445.png",
+      "PackagePath": "staticwebassets\\Imagens\\2c90fe16368985f13775e541ee756156.jpg51c7deb4-0276-4a84-8e27-7e97209fe386124445.png"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\Imagens\\8cpdwthnqesgcujwogwpugeoys8ivww9bnlczwrzvdiqranhjax9tsv6bhjzglwo_logo_reply.ico3b1dbeff-2fa4-4e4a-8f2c-4f528f2d4e651256.png",
+      "PackagePath": "staticwebassets\\Imagens\\8cpdwthnqesgcujwogwpugeoys8ivww9bnlczwrzvdiqranhjax9tsv6bhjzglwo_logo_reply.ico3b1dbeff-2fa4-4e4a-8f2c-4f528f2d4e651256.png"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\Imagens\\8cpdwthnqesgcujwogwpugeoys8ivww9bnlczwrzvdiqranhjax9tsv6bhjzglwo_logo_reply.jfifdf85e80a-295e-4177-a767-53e17ee931531244.png",
+      "PackagePath": "staticwebassets\\Imagens\\8cpdwthnqesgcujwogwpugeoys8ivww9bnlczwrzvdiqranhjax9tsv6bhjzglwo_logo_reply.jfifdf85e80a-295e-4177-a767-53e17ee931531244.png"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\Imagens\\bigmuzzy.jpeg713e3aad-c6d5-4a80-ae8d-95ddd225d5d112.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\bigmuzzy.jpeg713e3aad-c6d5-4a80-ae8d-95ddd225d5d112.jpg"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\css\\lux.css",
+      "PackagePath": "staticwebassets\\css\\lux.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\de.goncalves\\source\\repos\\ProjetoEmprestimoLivros\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ProjetoEmprestimoLivros.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ProjetoEmprestimoLivros.props",
+      "PackagePath": "build\\ProjetoEmprestimoLivros.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ProjetoEmprestimoLivros.props",
+      "PackagePath": "buildMultiTargeting\\ProjetoEmprestimoLivros.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ProjetoEmprestimoLivros.props",
+      "PackagePath": "buildTransitive\\ProjetoEmprestimoLivros.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
