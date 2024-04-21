@@ -1,21 +1,32 @@
 ﻿@using ProjetoEmprestimoLivros.Models.Viagens
 @model IEnumerable<ViagensFeitasModel>
 
-<div class="container mt-5">
-    <!-- Conteúdo da sua página -->
-</div>
+@if (TempData["MensagemSucesso"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["MensagemSucesso"]
+    </div>
+}
 
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["MensagemErro"]
+    </div>
+}
+
+
+<div class="container mt-5">
+</div>
 
 
 <div class="container mt-5">
     <div class="btn-box d-flex justify-content-between align-items-center mb-3">
         <h2>Minhas Viagens realizadas!</h2>
-        <a class="btn btn-success" asp-controller="" asp-action=""><i class="bi bi-emoji-heart-eyes"></i> Cadastrar nova viagem</a>
-        @*         <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ProjetoEmprestimoLivros</a>
-        *@
+        <a class="btn btn-success" asp-controller="ViagensFeitas" asp-action="CadastrarViagem"><i class="bi bi-emoji-heart-eyes"></i> Nova Viagem</a>
     </div>
 
-    <table class="table table-hover">
+    <table class="table table-hover" id="viagens">
         <thead>
             <tr>
                 <th>Foto</th>

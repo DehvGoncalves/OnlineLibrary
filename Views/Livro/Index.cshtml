@@ -1,6 +1,21 @@
 ﻿@using ProjetoEmprestimoLivros.Models
 @model IEnumerable<LivrosModel>
 
+@if (TempData["MensagemSucesso"] != null)
+{
+    <div class="alert alert-success text-dark" role="alert">
+        @TempData["MensagemSucesso"]
+    </div>
+}
+
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger text dark" role="alert">
+        @TempData["MensagemErro"]
+    </div>
+}
+
+
 <div class="container mt-5">
     <div class="btn-box d-flex justify-content-between align-items-center mb-3">
         <h2>Cadastro de livros!</h2>
@@ -9,7 +24,7 @@
  *@
     </div>
 
-    <table class="table table-hover">
+    <table class="table table-hover" id="livros">
         <thead>
             <tr>
                 <th></th>

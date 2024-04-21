@@ -1,11 +1,25 @@
 ﻿@using ProjetoEmprestimoLivros.Dto
 @model LivroCriacaoDto
 
+@if (TempData["MensagemSucesso"] != null)
+{
+    <div class="alert alert-success text-dark" role="alert">
+        @TempData["MensagemSucesso"]
+    </div>
+}
+
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger text dark" role="alert">
+        @TempData["MensagemErro"]
+    </div>
+}
+
 
 <h2 class="text-center">Cadastro de Livros</h2>
 
 <div class="container mt-5">
-    <form method="post" asp-controller="Livro" asp-action="Cadastrar" enctype="multipart/form-data">
+    <form method="post" asp-action="Cadastrar" asp-controller="Livro"  enctype="multipart/form-data">
         <div class="text-center">
             <label for="ImageFile">
                 <img id="img" style="width: 150px; height:200px"></img>
