@@ -1,0 +1,48 @@
+﻿using ProjetoEmprestimoLivros.Models.Viagens
+@model ProjetoEmprestimoLivros.Models.Viagens.ViagensFeitasModel
+
+
+
+<div class="container mt-5">
+    <h2>Detalhes das viagens @Model.Lugar </h2>
+
+    <div class="text-center">
+        <img src="/Imagens/@Model.Foto" style="width:150px; height:200px" />
+    </div>
+
+
+    <div class="mb-1">
+        <label class="for-label">Companhia de viagem: </label>
+        <input type="text" asp-for="@Model.CompanhiaDeViagem" class="form-control shadow-none" disabled>
+    </div>
+
+    <div class="mb-1">
+        <label class="for-label">Data: </label>
+        <input type="text" asp-for="@Model.Data" class="form-control shadow-none" disabled>
+    </div>
+
+    <div class="mb-1">
+        <label class="for-label">Valor da Hospedagem</label>
+        <input type="text" asp-for="@Model.ValorHospedagem" class="form-control shadow-none" disabled>
+    </div>
+
+
+    <div class="mb-1">
+        <label class="for-label"></label>Quantidade de pessoas:
+        <input type="text" asp-for="@Model.QuantidadePessoas" class="form-control shadow-none" disabled>
+    </div>
+
+    <div class="mb-1">
+        <label class="for-label">Nome das pessoas:</label>
+        <input type="text" asp-for="@Model.NomePessoas" class="form-control shadow-none" disabled>
+    </div>
+
+    <div class="mb-1">
+        <label class="for-label">Avaliação:</label>
+        <input type="text" asp-for="@Model.Nota" class="form-control shadow-none" disabled>
+    </div>
+
+    <div class="mb-1">
+        <label class="for-label">Data ultima Alteração:</label>
+        <input type="text" asp-for="@Model.DataUpdate" class="form-control shadow-none" disabled>
+    </div>

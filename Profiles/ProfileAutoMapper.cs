@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using ProjetoEmprestimoLivros.Dto;
+using ProjetoEmprestimoLivros.Dto.Livro;
 using ProjetoEmprestimoLivros.Models;
 
 namespace ProjetoEmprestimoLivros.Profiles
@@ -8,7 +8,9 @@ namespace ProjetoEmprestimoLivros.Profiles
     {
         public ProfileAutoMapper()
         {
-            CreateMap<LivroCriacaoDto, LivrosModel>();
+            CreateMap<LivroCriacaoDto, LivroModel>(); //Objeto tipo LivroCriacaoDto pode ser LivrosModel
+            CreateMap<LivroModel, LivroEdicaoDto>();
+            CreateMap<LivroEdicaoDto, LivroModel>();
         }
     }
 }

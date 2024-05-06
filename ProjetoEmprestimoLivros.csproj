@@ -9,16 +9,21 @@
   <ItemGroup>
     <Compile Remove="NovaPasta1\**" />
     <Compile Remove="NovaPasta2\**" />
+    <Compile Remove="Views\Usuario\**" />
     <Content Remove="NovaPasta1\**" />
     <Content Remove="NovaPasta2\**" />
+    <Content Remove="Views\Usuario\**" />
     <EmbeddedResource Remove="NovaPasta1\**" />
     <EmbeddedResource Remove="NovaPasta2\**" />
+    <EmbeddedResource Remove="Views\Usuario\**" />
     <None Remove="NovaPasta1\**" />
     <None Remove="NovaPasta2\**" />
+    <None Remove="Views\Usuario\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="Controllers\UsuarioController.cs" />
+    <Compile Remove="Dto\Livro.cs" />
     <Compile Remove="Views\Home\Apresentacao.cs" />
     <Compile Remove="Views\Home\Apresentacao.cshtml.cs" />
     <Compile Remove="Views\Home\Apresentação.cs" />
@@ -38,6 +43,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
 </Project>

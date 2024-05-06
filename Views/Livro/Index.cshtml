@@ -1,5 +1,5 @@
 ﻿@using ProjetoEmprestimoLivros.Models
-@model IEnumerable<LivrosModel>
+@model IEnumerable<LivroModel>
 
 @if (TempData["MensagemSucesso"] != null)
 {
@@ -10,29 +10,28 @@
 
 @if (TempData["MensagemErro"] != null)
 {
-    <div class="alert alert-danger text dark" role="alert">
+    <div class="alert alert-danger text-dark" role="alert">
         @TempData["MensagemErro"]
     </div>
 }
 
-
 <div class="container mt-5">
-    <div class="btn-box d-flex justify-content-between align-items-center mb-3">
+    <div class="btn-box d-flex justify-content-between align-items-center mb-3 width: 110px; margin-right: 5px;">
         <h2>Cadastro de livros!</h2>
-        <a class="btn btn-success" asp-controller="Livro" asp-action="Cadastrar" ><i class="bi bi-plus-circle"></i> Cadastrar novo livro</a>
-@*         <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ProjetoEmprestimoLivros</a>
- *@
+        <a style="width: 150px; margin-right: 0px;" class="btn btn-success" asp-controller="Livro" asp-action="Cadastrar"><i class="bi bi-plus-circle"></i>Novo Livro</a>
     </div>
 
-    <table class="table table-hover" id="livros">
+
+
+    <table class="table table-hover" id="registros">
         <thead>
             <tr>
-                <th></th>
+                <th>Capa</th>
                 <th>Título</th>
                 <th>Autor</th>
                 <th>Gênero</th>
-                <th>Quantidade em Estoque</th>
-                <th>Data de cadastro</th>
+                <th>Estoque</th>
+                <th>Cadastro</th>
                 <th></th>
             </tr>
         </thead>
@@ -47,25 +46,27 @@
                             @if (livros.Capa != null)
                             {
                                 <td>
-                                    <img src="Imagem/@livros.Capa" style="width:50px; height: 50px;" />
+                                    <img src="/Imagens/@livros.Capa" style="width:50px; height: 50px;" />
                                 </td>
                             }
                             else
                             {
                                 <td></td>
-
                             }
                             <td><i class="bi bi-people"></i>@livros.Titulo</td>
                             <td>@livros.Autor</td>
                             <td>@livros.Genero</td>
-                            <td><i class="bi bi-envelope-at"></i>@livros.QuantidadeEmEstoque</td>
-                            <td><i class="bi bi-calendar"></i>@livros.DataDeCadastro</td>
-                            <td>
-                                <a class="btn btn-warning" href="#"><i class="bi bi-file-earmark-zip"></i> Editar</a>
-                                <a class="btn btn-info" href="#"><i class="bi bi-pencil"></i> Excluir</a>
+                            <td>@livros.QuantidadeEmEstoque</td>
+                            <td> <i class="bi bi-calendar"> </i>@livros.DataDeCadastro</td>
+                            <td style="width:500px">
+                                <a style="width: 110px; margin-right: 5px;" class="btn btn-warning" asp-controller="Livro" asp-action="Detalhes" asp-route-id="@livros.Id"><i class="bi bi-file-earmark-zip"></i> Detalhes</a>
+                                <a style="width: 110px; margin-right: 5px;" class="btn btn-info" asp-controller="livro" asp-action="Editar" asp-route-id="@livros.Id"><i class="bi bi-pencil"></i> Editar</a>
+                                <form asp-controller="Livro" asp-action="Excluir" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@livros.Id" />
+                                    <button type="submit" class="btn btn-danger" style="width: 110px; margin-right: 10px;" onclick="return confirm('Tem certeza que deseja excluir o livro @(livros.Titulo)?');"> <i class="bi bi-trash"></i> Excluir</button>
+                                </form>
                             </td>
                         </tr>
-
                     }
                 }
                 else
@@ -78,3 +79,25 @@
         </tbody>
     </table>
 </div>
+
+<script>
+    const inputFile = document.querySelector("#ImageFile");
+
+    inputFile.addEventListener("change", function (e) {
+        const inputTarget = e.target;
+        const file = inputTarget.files[0]; /* caso mais de uma imagem seja selecionada, ele pega a primeira */
+
+        if (file) {
+            const reader = new FileReader();
+
+            reader.addEventListener("load", function (e) {
+                const readerTarget = e.target;
+                const img = document.querySelector('#img');
+
+                img.src = readerTarget.result;
+            });
+
+            reader.readAsDataURL(file); /* Mostra a imagem que foi selecionada no input file */
+        }
+    });
+</script>

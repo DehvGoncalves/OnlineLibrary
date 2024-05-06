@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using ProjetoEmprestimoLivros.Data;
 using ProjetoEmprestimoLivros.Services.LivroService;
+using ProjetoEmprestimoLivros.Services.UsuariosService;
 using ProjetoEmprestimoLivros.Services.ViagemService;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,10 +15,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-builder.Services.AddScoped<ILivroInterface, LivroService>();
-builder.Services.AddScoped<IViagemInterface, ViagemService>();
-
-builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddScoped<ILivroInterface, LivroService>(); //ILivroInterface implementa o LivroService
+builder.Services.AddScoped<IViagemInterface, ViagemService>(); //IViagemInterface implementa o ViagemService
+builder.Services.AddScoped<IUsuariosInterface, UsuariosService>(); 
+builder.Services.AddAutoMapper(typeof(Program)); // Registra os profiles do AutoMapper baseados no assembly fornecido
 
 var app = builder.Build();
 

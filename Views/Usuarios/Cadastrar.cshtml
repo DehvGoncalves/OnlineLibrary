@@ -1,0 +1,11 @@
+﻿@using ProjetoEmprestimoLivros.Enum;
+
+@if (ViewBag.Perfil == PerfilEnum.Cliente)
+{
+    <p>Cliente</p>
+}
+
+@if (ViewBag.Perfil == PerfilEnum.Funcionario)
+{
+    <p>Funcionário</p>
+}
