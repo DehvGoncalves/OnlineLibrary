@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjetoEmprestimoLivros.Data;
 
@@ -11,9 +12,10 @@ using ProjetoEmprestimoLivros.Data;
 namespace ProjetoEmprestimoLivros.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240509232453_CEPObrigatorio")]
+    partial class CEPObrigatorio
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,35 +23,6 @@ namespace ProjetoEmprestimoLivros.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
-
-            modelBuilder.Entity("ProjetoEmprestimoLivros.Models.EmprestimoModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime?>("DataDevolucao")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DataEmprestimo")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("LivroId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("LivroId");
-
-                    b.HasIndex("UsuarioId");
-
-                    b.ToTable("Emprestimos");
-                });
 
             modelBuilder.Entity("ProjetoEmprestimoLivros.Models.EnderecoModel", b =>
                 {
@@ -191,23 +164,52 @@ namespace ProjetoEmprestimoLivros.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("ProjetoEmprestimoLivros.Models.EmprestimoModel", b =>
+            modelBuilder.Entity("ProjetoEmprestimoLivros.Models.Viagens.ViagensFeitasModel", b =>
                 {
-                    b.HasOne("ProjetoEmprestimoLivros.Models.LivroModel", "Livro")
-                        .WithMany("Emprestimos")
-                        .HasForeignKey("LivroId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.HasOne("ProjetoEmprestimoLivros.Models.UsuarioModel", "Usuario")
-                        .WithMany("Emprestimos")
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Navigation("Livro");
+                    b.Property<string>("CompanhiaDeViagem")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Navigation("Usuario");
+                    b.Property<DateTime>("Data")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataUpdate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Foto")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Hospedagem")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Lugar")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NomePessoas")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Nota")
+                        .HasColumnType("int");
+
+                    b.Property<int>("QuantidadePessoas")
+                        .HasColumnType("int");
+
+                    b.Property<double>("ValorHospedagem")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ViagensFeitas");
                 });
 
             modelBuilder.Entity("ProjetoEmprestimoLivros.Models.EnderecoModel", b =>
@@ -221,15 +223,8 @@ namespace ProjetoEmprestimoLivros.Migrations
                     b.Navigation("Usuario");
                 });
 
-            modelBuilder.Entity("ProjetoEmprestimoLivros.Models.LivroModel", b =>
-                {
-                    b.Navigation("Emprestimos");
-                });
-
             modelBuilder.Entity("ProjetoEmprestimoLivros.Models.UsuarioModel", b =>
                 {
-                    b.Navigation("Emprestimos");
-
                     b.Navigation("Endereco")
                         .IsRequired();
                 });

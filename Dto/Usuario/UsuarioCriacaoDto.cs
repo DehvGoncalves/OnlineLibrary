@@ -9,7 +9,7 @@ namespace ProjetoEmprestimoLivros.Dto.Usuario
         [Key]
         public int Id { get; set; }
         [Required(ErrorMessage ="Digite o nome Completo!")]
-        public string NomeCOmpleto { get; set; } = string.Empty;
+        public string NomeCompleto { get; set; } = string.Empty;
         [Required(ErrorMessage = "Informe o usuario!")]
         public string Usuario { get; set; } = string.Empty;
         [Required(ErrorMessage = "Informe o Email!")]
@@ -21,9 +21,10 @@ namespace ProjetoEmprestimoLivros.Dto.Usuario
         [Required(ErrorMessage = "Informe o Turno!")]
         public TurnoEnum Turno { get; set; }
         [Required(ErrorMessage = "Informe a Senha!"), MinLength(6, ErrorMessage = "A senha deve conter no mínimo 6 caracteres")] //Verifa se a senha tem no mínimo 6 caracteres
-        public string[] Senha { get; set; }
+        public string Senha { get; set; }
+        //Obrigatório configurar no Program.cs para usar o compare, lê documentação
         [Required(ErrorMessage = "Confirme a senha!"), Compare("Senha", ErrorMessage ="As senhas não coincidem")] //Compara se a senha informada é igual a senha
-        public string[] ConfirmarSenha { get; set; }
+        public string ConfirmarSenha { get; set; }
         [Required(ErrorMessage = "Informe o Lagradouro!")]
         public string Logradouro { get; set; } = string.Empty;
         [Required(ErrorMessage = "Informe o Bairro!")]

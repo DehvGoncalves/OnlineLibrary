@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjetoEmprestimoLivros.Data;
 
@@ -11,9 +12,10 @@ using ProjetoEmprestimoLivros.Data;
 namespace ProjetoEmprestimoLivros.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240630222955_CriandoTabelaDeEmprestimosEoRelacionamentoEntreEmprestimosUsuariosELivros")]
+    partial class CriandoTabelaDeEmprestimosEoRelacionamentoEntreEmprestimosUsuariosELivros
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,7 +32,7 @@ namespace ProjetoEmprestimoLivros.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<DateTime?>("DataDevolucao")
+                    b.Property<DateTime>("DataDevolucao")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DataEmprestimo")
@@ -48,7 +50,7 @@ namespace ProjetoEmprestimoLivros.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("Emprestimos");
+                    b.ToTable("EmprestimoModel");
                 });
 
             modelBuilder.Entity("ProjetoEmprestimoLivros.Models.EnderecoModel", b =>
