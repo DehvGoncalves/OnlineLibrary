@@ -48,12 +48,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\1200x630wa.png63aa9ef6-f779-4d65-8708-82fa9aaefdd201.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\atitude_mental.jpgd37e0043-980b-48cc-9acb-f02de26c8367.png))">
       <SourceType>Package</SourceType>
       <SourceId>ProjetoEmprestimoLivros</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
-      <RelativePath>Imagens/1200x630wa.png63aa9ef6-f779-4d65-8708-82fa9aaefdd201.jpg</RelativePath>
+      <RelativePath>Imagens/atitude_mental.jpgd37e0043-980b-48cc-9acb-f02de26c8367.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -62,14 +62,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\1200x630wa.png63aa9ef6-f779-4d65-8708-82fa9aaefdd201.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\atitude_mental.jpgd37e0043-980b-48cc-9acb-f02de26c8367.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\2c90fe16368985f13775e541ee756156.jpg51c7deb4-0276-4a84-8e27-7e97209fe386124445.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\a_menina_que_roubava_livros.jpgdb788ce8-dd7d-4377-99a9-80943eeafcff.png))">
       <SourceType>Package</SourceType>
       <SourceId>ProjetoEmprestimoLivros</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
-      <RelativePath>Imagens/2c90fe16368985f13775e541ee756156.jpg51c7deb4-0276-4a84-8e27-7e97209fe386124445.png</RelativePath>
+      <RelativePath>Imagens/a_menina_que_roubava_livros.jpgdb788ce8-dd7d-4377-99a9-80943eeafcff.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -78,14 +78,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\2c90fe16368985f13775e541ee756156.jpg51c7deb4-0276-4a84-8e27-7e97209fe386124445.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\a_menina_que_roubava_livros.jpgdb788ce8-dd7d-4377-99a9-80943eeafcff.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\8cpdwthnqesgcujwogwpugeoys8ivww9bnlczwrzvdiqranhjax9tsv6bhjzglwo_logo_reply.ico3b1dbeff-2fa4-4e4a-8f2c-4f528f2d4e651256.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\capal.jpgf3a50885-5584-4dbf-95d0-006eeb400cab.png))">
       <SourceType>Package</SourceType>
       <SourceId>ProjetoEmprestimoLivros</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
-      <RelativePath>Imagens/8cpdwthnqesgcujwogwpugeoys8ivww9bnlczwrzvdiqranhjax9tsv6bhjzglwo_logo_reply.ico3b1dbeff-2fa4-4e4a-8f2c-4f528f2d4e651256.png</RelativePath>
+      <RelativePath>Imagens/capal.jpgf3a50885-5584-4dbf-95d0-006eeb400cab.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -94,14 +94,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\8cpdwthnqesgcujwogwpugeoys8ivww9bnlczwrzvdiqranhjax9tsv6bhjzglwo_logo_reply.ico3b1dbeff-2fa4-4e4a-8f2c-4f528f2d4e651256.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\capal.jpgf3a50885-5584-4dbf-95d0-006eeb400cab.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\8cpdwthnqesgcujwogwpugeoys8ivww9bnlczwrzvdiqranhjax9tsv6bhjzglwo_logo_reply.jfifdf85e80a-295e-4177-a767-53e17ee931531244.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\como_capturar_um_doende.jpgafb92b33-bd45-4777-9ce0-40005bbaaba9.png))">
       <SourceType>Package</SourceType>
       <SourceId>ProjetoEmprestimoLivros</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
-      <RelativePath>Imagens/8cpdwthnqesgcujwogwpugeoys8ivww9bnlczwrzvdiqranhjax9tsv6bhjzglwo_logo_reply.jfifdf85e80a-295e-4177-a767-53e17ee931531244.png</RelativePath>
+      <RelativePath>Imagens/como_capturar_um_doende.jpgafb92b33-bd45-4777-9ce0-40005bbaaba9.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -110,14 +110,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\8cpdwthnqesgcujwogwpugeoys8ivww9bnlczwrzvdiqranhjax9tsv6bhjzglwo_logo_reply.jfifdf85e80a-295e-4177-a767-53e17ee931531244.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\como_capturar_um_doende.jpgafb92b33-bd45-4777-9ce0-40005bbaaba9.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\bigmuzzy.jpeg713e3aad-c6d5-4a80-ae8d-95ddd225d5d112.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\como_fazer_amigos_e_influenciar_pessoas.jpg2ba717bb-fd55-42b6-9e3f-1663d2f74427.png))">
       <SourceType>Package</SourceType>
       <SourceId>ProjetoEmprestimoLivros</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
-      <RelativePath>Imagens/bigmuzzy.jpeg713e3aad-c6d5-4a80-ae8d-95ddd225d5d112.jpg</RelativePath>
+      <RelativePath>Imagens/como_fazer_amigos_e_influenciar_pessoas.jpg2ba717bb-fd55-42b6-9e3f-1663d2f74427.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -126,7 +126,231 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\bigmuzzy.jpeg713e3aad-c6d5-4a80-ae8d-95ddd225d5d112.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\como_fazer_amigos_e_influenciar_pessoas.jpg2ba717bb-fd55-42b6-9e3f-1663d2f74427.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\delphi.png5c34bd71-5b29-4fc7-96d2-e9eb4588d3ca.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>Imagens/delphi.png5c34bd71-5b29-4fc7-96d2-e9eb4588d3ca.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\delphi.png5c34bd71-5b29-4fc7-96d2-e9eb4588d3ca.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\diario_estoico.png8a93f02e-5f82-4806-af75-9355bc19d1de.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>Imagens/diario_estoico.png8a93f02e-5f82-4806-af75-9355bc19d1de.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\diario_estoico.png8a93f02e-5f82-4806-af75-9355bc19d1de.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\estuda_que_a_vida_muda.webp121af5f3-1718-41e1-b17e-5211aee68947.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>Imagens/estuda_que_a_vida_muda.webp121af5f3-1718-41e1-b17e-5211aee68947.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\estuda_que_a_vida_muda.webp121af5f3-1718-41e1-b17e-5211aee68947.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\jantar_secreto.webp04417028-ae82-4c29-8c81-1d02e23047b1.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>Imagens/jantar_secreto.webp04417028-ae82-4c29-8c81-1d02e23047b1.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\jantar_secreto.webp04417028-ae82-4c29-8c81-1d02e23047b1.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\jantar_secreto.webpd363a117-0bf8-4fc5-972c-220b36189e3a.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>Imagens/jantar_secreto.webpd363a117-0bf8-4fc5-972c-220b36189e3a.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\jantar_secreto.webpd363a117-0bf8-4fc5-972c-220b36189e3a.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\jantar_secreto.webpecf56e3b-77d2-4a42-8f3c-3ecb93efd1d3.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>Imagens/jantar_secreto.webpecf56e3b-77d2-4a42-8f3c-3ecb93efd1d3.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\jantar_secreto.webpecf56e3b-77d2-4a42-8f3c-3ecb93efd1d3.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\o_caidado_do_corpo.jpg57541f2f-e6f2-4dea-8ef7-ba02e78ec96a.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>Imagens/o_caidado_do_corpo.jpg57541f2f-e6f2-4dea-8ef7-ba02e78ec96a.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\o_caidado_do_corpo.jpg57541f2f-e6f2-4dea-8ef7-ba02e78ec96a.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\o_mesmo_de_sempre.jpg28cab412-d372-49cd-913d-139ed1ab09e8.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>Imagens/o_mesmo_de_sempre.jpg28cab412-d372-49cd-913d-139ed1ab09e8.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\o_mesmo_de_sempre.jpg28cab412-d372-49cd-913d-139ed1ab09e8.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\o_vilareijo.jpg8ad78c32-dfb1-4103-a339-e96acc13bb5f.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>Imagens/o_vilareijo.jpg8ad78c32-dfb1-4103-a339-e96acc13bb5f.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\o_vilareijo.jpg8ad78c32-dfb1-4103-a339-e96acc13bb5f.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\o_vilareijo.jpgdf5c8921-a3d4-4acf-be30-1ed31ca4a46b.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>Imagens/o_vilareijo.jpgdf5c8921-a3d4-4acf-be30-1ed31ca4a46b.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\o_vilareijo.jpgdf5c8921-a3d4-4acf-be30-1ed31ca4a46b.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\quem_pensa_henriquece.jpgf7154d6d-b8b2-40fa-b6e6-30a138a44cba.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>Imagens/quem_pensa_henriquece.jpgf7154d6d-b8b2-40fa-b6e6-30a138a44cba.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\quem_pensa_henriquece.jpgf7154d6d-b8b2-40fa-b6e6-30a138a44cba.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\the_garden.jpg9c25fbd1-bc37-4290-9d94-9efa4c2a7552.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>Imagens/the_garden.jpg9c25fbd1-bc37-4290-9d94-9efa4c2a7552.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagens\the_garden.jpg9c25fbd1-bc37-4290-9d94-9efa4c2a7552.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Ativo.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>img/Ativo.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Ativo.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Inativo.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoEmprestimoLivros</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoEmprestimoLivros</BasePath>
+      <RelativePath>img/Inativo.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Inativo.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\site.js))">
       <SourceType>Package</SourceType>

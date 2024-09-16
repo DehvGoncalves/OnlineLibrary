@@ -16,36 +16,72 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\de.goncalves\source\repos\ProjetoEmprestimoLivros
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Cliente/Perfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxQZXJmaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Funcionario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Home/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Livro/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9cQ2FkYXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Livro/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9cRGV0YWxoZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Livro/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9cRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Livro/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Relatorio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Shared/Components/Menu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Shared/_LayoutDeslogada.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXREZXNsb2dhZGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Usuario/Diario.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEaWFyaW8uY3NodG1s
+[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Usuarios/Cadastrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ2FkYXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Usuario/PerfilUsuario.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xQZXJmaWxVc3VhcmlvLmNzaHRtbA==
+[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Usuarios/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWxoZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/ViagensFeitas/CadastrarViagem.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlhZ2Vuc0ZlaXRhc1xDYWRhc3RyYXJWaWFnZW0uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/ViagensFeitas/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlhZ2Vuc0ZlaXRhc1xJbmRleC5jc2h0bWw=
+[C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/Usuarios/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/de.goncalves/source/repos/ProjetoEmprestimoLivros/Views/_ViewImports.cshtml]

@@ -34,6 +34,20 @@ namespace ProjetoEmprestimoLivros.Services.LivroService
             }
 
         }
+        public async Task<List<LivroModel>> BuscarLivrosFiltro(string pesquisar)
+        {
+            try
+            {
+                //pra cada livro que tem no banco, retornar os livros que tem o titulo ou autor com alguma palavra
+                //parecida com a palavra que o usuário digitou
+                var livros = await _context.Livros.Where(l => l.Titulo.Contains(pesquisar) || l.Autor.Contains(pesquisar)).ToListAsync();
+                return livros;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro no método BuscarLivrosFiltro: {ex.Message}");
+            }
+        }
 
         public async Task<LivroModel> Cadastrar(LivroCriacaoDto livroCriacaoDto, IFormFile foto)
         {
@@ -104,6 +118,55 @@ namespace ProjetoEmprestimoLivros.Services.LivroService
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+        }
+        public async Task<EmprestimoModel> BuscarLivroPorId(int? id, UsuarioModel usuarioSessao)
+        {   //Lembrando que EmprestimoModel é a tabela que tem o livro e o usuário e faz join com a tabela LivroModel por isso conseguimos Acessar as informações do livro
+            try
+            {
+                if (usuarioSessao == null) //Usuario Deslogado
+                {
+                    // Faz join com a tabela Livro e busca o primeiro empréstimo com o ID do livro selecionado.Se emprestimoSemUsuario for nulo, o livro nunca foi emprestado.
+                    var emprestimoSemUsuario = await _context.Emprestimos.Include(livro => livro.Livro)
+                        .FirstOrDefaultAsync(emprestimo => emprestimo.LivroId == id);
+
+                    //Se o livro for nulo, ou seja, não existe um livro com esse id
+                    //então vamos usar o método BuscarLivroPorId com outra assinatura, então vamos buscar sem nenhu sessão pra tá influenciando
+                    if (emprestimoSemUsuario == null)
+                    {
+                        var livro = await BuscarLivroPorId(id);
+                        var emprestimoBanco = new EmprestimoModel
+                        {
+                            //Encapsula um livroModel em um EmprestimoModel.
+                            //Isso garante que o tipo de retorno do método principal não muda.
+                            Livro = livro,
+                            Usuario = null
+                        };
+                        return emprestimoBanco;
+                    }
+                    return emprestimoSemUsuario;
+                }
+                var emprestimo = await _context.Emprestimos //entrei na tabela emprestimos
+                    .Include(livro => livro.Livro) //Acessei o livro
+                    .Include(usuario => usuario.Usuario) //Acessei o usuário pra eu conseguir ter as informações do usuário
+                    .FirstOrDefaultAsync(emprestimo => emprestimo.LivroId == id
+                    && emprestimo.DataDevolucao == null && emprestimo.UsuarioId == usuarioSessao.Id); //A devolução ainda não foi feita por isso a dataDevolução é null e o usuário tá logado
+
+                if (emprestimo == null)
+                {
+                    var livro = await BuscarLivroPorId(id);
+                    var emprestimoBanco = new EmprestimoModel
+                    {
+                        Livro = livro,
+                        Usuario = usuarioSessao
+                    };
+                    return emprestimoBanco;
+                }
+                return emprestimo;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"método BuscarLivroPorId" + ex.Message);
             }
         }
 

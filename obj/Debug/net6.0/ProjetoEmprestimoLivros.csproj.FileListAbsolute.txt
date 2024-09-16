@@ -68,3 +68,11 @@ C:\Users\de.goncalves\source\repos\ProjetoEmprestimoLivros\obj\Debug\net6.0\Proj
 C:\Users\de.goncalves\source\repos\ProjetoEmprestimoLivros\obj\Debug\net6.0\ProjetoEmprestimoLivros.csproj.CopyComplete
 C:\Users\de.goncalves\source\repos\ProjetoEmprestimoLivros\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\de.goncalves\source\repos\ProjetoEmprestimoLivros\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\de.goncalves\source\repos\ProjetoEmprestimoLivros\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\de.goncalves\source\repos\ProjetoEmprestimoLivros\bin\Debug\net6.0\ClosedXML.dll
+C:\Users\de.goncalves\source\repos\ProjetoEmprestimoLivros\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+C:\Users\de.goncalves\source\repos\ProjetoEmprestimoLivros\bin\Debug\net6.0\ExcelNumberFormat.dll
+C:\Users\de.goncalves\source\repos\ProjetoEmprestimoLivros\bin\Debug\net6.0\Irony.dll
+C:\Users\de.goncalves\source\repos\ProjetoEmprestimoLivros\bin\Debug\net6.0\SixLabors.Fonts.dll
+C:\Users\de.goncalves\source\repos\ProjetoEmprestimoLivros\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\Users\de.goncalves\source\repos\ProjetoEmprestimoLivros\bin\Debug\net6.0\XLParser.dll

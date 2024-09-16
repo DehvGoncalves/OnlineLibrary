@@ -1,16 +1,24 @@
 ﻿using AutoMapper;
+using ProjetoEmprestimoLivros.Dto.Endereco;
 using ProjetoEmprestimoLivros.Dto.Livro;
+using ProjetoEmprestimoLivros.Dto.Relatorio;
 using ProjetoEmprestimoLivros.Models;
+
 
 namespace ProjetoEmprestimoLivros.Profiles
 {
     public class ProfileAutoMapper : Profile
     {
         public ProfileAutoMapper()
-        {
-            CreateMap<LivroCriacaoDto, LivroModel>(); //Objeto tipo LivroCriacaoDto pode ser LivrosModel
+        {   //Objeto tipo LivroCriacaoDto pode ser LivrosModel
+            CreateMap<LivroCriacaoDto, LivroModel>(); 
             CreateMap<LivroModel, LivroEdicaoDto>();
             CreateMap<LivroEdicaoDto, LivroModel>();
+            CreateMap<EnderecoModel, EnderecoEditarDto>();
+            CreateMap<EnderecoEditarDto, EnderecoModel>();
+            CreateMap<LivroModel, LivroRelatorioDto>();
+            CreateMap<UsuarioModel, UsuarioRelatorioDto>();
+            CreateMap<EmprestimoModel, EmprestimoRelatorioDto>();
         }
     }
 }
