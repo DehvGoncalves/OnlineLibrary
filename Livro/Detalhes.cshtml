@@ -1,0 +1,91 @@
+﻿@using ProjetoEmprestimoLivros.Models
+@model ProjetoEmprestimoLivros.Models.LivroModel
+
+<div class="container mt-5">
+
+    <h2>Detalhes do livro @Model.Titulo </h2>
+
+    <div class="text-center">
+        <img src="/Imagens/@Model.Capa" style="width:150px; height:200px" />
+    </div>
+
+
+    <div class="mb-1">
+        <label class="for-label">Titulo: </label>
+        <input type="text" asp-for="@Model.Titulo" class="form-control shadow-none" disabled>
+    </div>
+
+    <div class="mb-1">
+        <label class="for-label mt-3">Autor: </label>
+        <input type="text" class="form-control shadow-none" asp-for="@Model.Autor" disabled>
+    </div>
+
+    <div class="mb-1">
+        <label class="for-label mt-3">Descrição: </label>
+        <textarea asp-for="@Model.Descricao" class="form-control shadow-none" disabled rows="10" cols="30"></textarea>@*  texarea é para textos grandes *@
+    </div>
+
+    <div class="col-12 d-flex gap-1 w-100">
+        <div class="mb-1 col-6">
+            <label class="for-label mt-3">Ano Publicação: </label>
+            <input type="text" class="form-control shadow-none" asp-for="@Model.AnoPublicacao" disabled>
+        </div>
+
+        <div class="mb-1 col-6">
+            <label class="for-label mt-3">Genero: </label>
+            <input type="text" class="form-control shadow-none" asp-for="@Model.Genero" disabled>
+        </div>
+    </div>
+
+    <div class="col-12 d-flex gap-1 w-100">
+        <div class="mb-1 col-6">
+            <label class="for-label mt-3">Quantidade em estoque: </label>
+            <input type="number" min="1" class="form-control shadow-none" asp-for="@Model.QuantidadeEmEstoque" disabled> @* Permitem apenas números a partir de 1 *@
+        </div>
+
+        <div class="mb-1 col-6">
+            <label class="for-label mt-3">ISBN: </label>
+            <input type="text" class="form-control shadow-none" asp-for="@Model.ISBN" disabled>
+        </div>
+    </div>
+
+    <div class="col-12 d-flex gap-1 w-100">
+        <div class="mb-1 col-6">
+            <label class="for-label mt-3">Data de Cadastro: </label>
+            <input type="text" class="form-control shadow-none" asp-for="@Model.DataDeCadastro" disabled>
+        </div>
+
+        <div class="mb-1 col-6">
+            <label class="for-label mt-3">Data de Alteração: </label>
+            <input type="text" class="form-control shadow-none" asp-for="@Model.DataDeAlteracao" disabled>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+<script>
+    const inputFile = document.querySelector("#ImageFile");
+
+    inputFile.addEventListener("change", function (e) {
+        const inputTarget = e.target;
+        const file = inputTarget.files[0]; /* caso mais de uma imagem seja selecionada, ele pega a primeira */
+
+        if (file) {
+            const reader = new FileReader();
+
+            reader.addEventListener("load", function (e) {
+                const readerTarget = e.target;
+                const img = document.querySelector('#img');
+
+                img.src = readerTarget.result;
+            });
+
+            reader.readAsDataURL(file); /* Mostra a imagem que foi selecionada no input file */
+        }
+    });
+
+</script>

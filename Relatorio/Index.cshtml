@@ -1,0 +1,41 @@
+﻿@using ProjetoEmprestimoLivros.Enum  @* Enum é o namespace onde está a classe Enumerador *@
+
+@if (TempData["MensagemSucesso"] != null)
+{
+    <div class="alert alert-success text-dark" role="alert">
+        @TempData["MensagemSucesso"]
+    </div>
+}
+
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger text-dark" role="alert">
+        @TempData["MensagemErro"]
+    </div>
+}
+
+<div class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Relatórios</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-0">
+
+            @* A cada relatório que eu tenho no Enum, crio um card *@
+            @foreach (var relatorio in Enum.GetValues(typeof(RelatorioEnum)))
+            {
+                <div class="card" style="width:40rem; margin-left:20px; margin-bottom:20px">
+                    <div class="card-body">
+
+                        @* Estamos pegando a string do enum e mostrando *@
+                        <h5 class="card-title text-center" style="font-size:11px">@relatorio.ToString()</h5>
+
+                        <a class="btn btn-success w-100" style="font-size:12px"
+                           asp-controller="Relatorio"
+                           asp-action="Gerar"
+                           asp-route-id="@relatorio.GetHashCode()">Excel</a>
+
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+﻿@using ProjetoEmprestimoLivros.Models
+@model IEnumerable<LivroModel>
+
+@{
+    Layout = ViewBag.LayoutPagina; // Redirecionar para a página de layout deslogado
+}
+
+@if (TempData["MensagemSucesso"] != null)
+{
+    <div class="alert alert-success text-dark" role="alert">
+        @TempData["MensagemSucesso"]
+    </div>
+}
+
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger text-dark" role="alert">
+        @TempData["MensagemErro"]
+    </div>
+}
+
+<div class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            @* Basicamente vamos chamar o método index colocando a nossa variável de pesquisar pq é através dela que conseguimos fazer a pesquisa *@
+            <form method="get" asp-action="Index" asp-controller="Home" class="d-flex justify-content-center">
+                <input name="pesquisar" class="form-control w-50 mx-2" style="border:1px solid black; border-radius: 10px" />
+                <button type="submit" class="btn btn-primary w-10" style="border-radius:10px">Pesquisar</button>
+            </form>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-0">
+            @if (Model != null) // A model aqui é a lista de livros @model IEnumerable<LivroModel> que estamos recebendo
+            {
+                @if (Model.Any()) // A quantidade de livros é maior que 0?
+                {
+                    // Retornar uma lista de livros em que a quantidade em estoque é maior que 0
+                    foreach (var livro in Model.Where(l => l.QuantidadeEmEstoque > 0).ToList())
+                    {
+                        <div class="card" style="width:18rem; margin-left: 20px; margin-bottom:20px">
+                            <img src="/Imagens/@livro.Capa" class="card-img-top" style="width:178px; height:250px" />
+                            <div class="card-body">
+                                <h5 class="card-title">@livro.Titulo</h5>
+                                <p class="card-title">@livro.Autor</p>
+                                <a class="btn btn-primary w-100" style="font-size:16px"
+                                asp-action="Detalhes" asp-asp-controller="Home"
+                                   asp-route-id="@livro.Id">Detalhes</a>
+                            </div>
+                        </div>
+                    }
+                }
+            }
+        </div>
+    </div>
+</div>

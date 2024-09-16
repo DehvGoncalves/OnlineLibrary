@@ -1,0 +1,183 @@
+﻿@using ProjetoEmprestimoLivros.Dto.Usuario
+@using ProjetoEmprestimoLivros.Enum
+@model UsuarioEdicaoDto
+
+@if (TempData["MensagemSucesso"] != null)
+{
+    <div class="alert alert-success text-dark" role="alert">
+        @TempData["MensagemSucesso"]
+    </div>
+}
+
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger text-dark" role="alert">
+        @TempData["MensagemErro"]
+    </div>
+}
+
+<div class="container mt-5">
+    <form post="post" asp-action="Editar" asp-controller="Usuarios">
+
+        @if (ViewBag.Perfil == PerfilEnum.Cliente)
+        {
+            <h2>Editar Cliente</h2>
+        }
+        else
+        {
+            <h2>Editar Funcionário </h2>
+        }
+
+        <div class="mb-1">
+            <label>Nome Completo</label>
+            <input type="text" asp-for="NomeCompleto" class="form-control shadow-none" />
+            @* Span para exibir mensagem do DataNotatiom referente prop NomeCompleto  *@
+            <span class="text-bg-danger" asp-validation-for="NomeCompleto"> </span> 
+        </div>
+
+        <div class="mb-1">
+            <label>Usuário</label>
+            <input type="text" asp-for="Usuario" class="form-control shadow-none" />
+            <span class="text-bg-danger" asp-validation-for="Usuario"> </span> 
+        </div>
+
+        <div class="mb-1">
+            <label>E-mail</label>
+            <input type="email" asp-for="Email" class="form-control shadow-none" /> 
+            @* Tipo email pra que ele valide se é um email válido *@
+            <span class="text-bg-danger" asp-validation-for="Email"> </span> 
+        </div>
+
+        <div class="mb-1">
+            <label>Complemento</label>
+            <input type="text" asp-for="Endereco.Complemento" class="form-control shadow-none" />
+            <span class="text-bg-danger" asp-validation-for="Endereco.Complemento"> </span>
+        </div>
+
+
+        @if (ViewBag.Perfil == PerfilEnum.Funcionario)
+        {
+            @*Se o perfil do usuário for Funcionário, Delegate podera cadastrar cliente ou funcionário, ele poderá selecionar o perfil do usuário que deseja cadastrar. *@
+            <div class="mb-1">
+                <label>Perfil</label>
+                <select asp-for="Perfil" class="form-control shadow-none">
+                    <option value="1" selected> Administrador</option>
+                </select>
+                <span class="text-bg-danger" asp-validation-for="Perfil"> </span> @*Ele pode escolher de acordo com o Enum de perfil *@
+            </div>
+
+
+            @* Manha = 1,
+        Tarde = 2,
+        Noite = 3,
+        Cliente = 0 *@
+
+            <div class="mb-1">
+                <label>Turno</label>
+                <select asp-for="Turno" class="form-control shadow-none">
+                    <option value="1" selected>Manhã</option>
+                    <option value="2">Tarde</option>
+                    <option value="3">Noite</option>
+                </select>
+                <span class="text-bg-danger" asp-validation-for="Turno"> </span> 
+            </div>
+        }
+
+        <div class="col-12 d-flex gap-1 w-100">
+            <div class="mb-1">
+                <label>CEP</label>
+                <input type="text" asp-for="Endereco.CEP" class="form-control shadow-none" id="input-cep" />
+                <span class="text-bg-danger" asp-validation-for="Endereco.CEP"> </span> 
+            </div>
+
+
+
+            <div class="mb-1">
+                <label>Estado</label>
+                <input type="text" asp-for="Endereco.Estado" class="form-control shadow-none" id="input-estado" />
+                <span class="text-bg-danger" asp-validation-for="Endereco.Estado"> </span>
+            </div>
+        </div>
+
+
+        <div class="col-12 d-flex gap-1 w-100">
+            <div class="mb-1 col-8">
+                <label>Logradouro</label>
+                <input type="text" asp-for="Endereco.Logradouro" class="form-control shadow-none" id="input-logradouro" />
+                <span class="text-bg-danger" asp-validation-for="Endereco.Logradouro"> </span> 
+            </div>
+
+            <div class="mb-1 col-4">
+                <label>Número:</label>
+                <input type="text" asp-for="Endereco.Numero" class="form-control shadow-none" />
+                <span class="text-bg-danger" asp-validation-for="Endereco.Numero"> </span> 
+            </div>
+        </div>
+
+        <div class="col-12 d-flex gap-1 w-100">
+            <div class="mb-1 col-6">
+                <label>Bairro:</label>
+                <input type="text" asp-for="Endereco.Bairro" class="form-control shadow-none" id="input-bairro" />
+                <span class="text-bg-danger" asp-validation-for="Endereco.Bairro"> </span> 
+            </div>
+        </div>
+
+        <div class="col-12 d-flex gap-1 w-100">
+            <div class="mb-1 col-6">
+                <label>Complemento:</label>
+                <input type="text" asp-for="Endereco.Complemento" class="form-control shadow-none" id="input-complemento" />
+                <span class="text-bg-danger" asp-validation-for="Endereco.Complemento"> </span> 
+            </div>
+        </div>
+
+
+        <div class="d-flex mt-3">
+            <button type="submit" class="btn btn-success w-50 mx-1"><i class="bi bi-plus-circle"></i>Confirmar</button>
+
+            @*Se eu for cliente e clicar em voltar eu tenho que voltar para a página de cliente e se eu for funcionário eu target tenho que voltar para a página de funcionário*@
+            @if (ViewBag.Perfil == PerfilEnum.Cliente)
+            {
+                <a class="btn btn-info w-50" asp-controller="Cliente" asp-action="Index" asp-route-id="0"><i class="bi bi-arrow-left-circle"></i>Voltar</a>
+            }
+            else
+            {
+                <a class="btn btn-info w-50" asp-controller="Funcionario" asp-action="Index" asp-route-id="0"><i class="bi bi-arrow-left-circle"></i>Voltar</a>
+
+            }
+        </div>
+
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<script>
+    // Selecionando os inputs do formulário pelos seus IDs
+    var inputLogradouro = document.querySelector('#input-logradouro');
+    var inputBairro = document.querySelector('#input-bairro');
+    var inputComplemento = document.querySelector('#input-complemento');
+    var inputEstado = document.querySelector('#input-estado');
+
+    // Adicionando um evento ao campo de CEP para ser acionado quando perde o foco
+    document.querySelector('#input-cep').addEventListener('focusout', async function (e) {
+        // Obtendo o valor do campo de CEP
+        var target = e.target; //Aqui, e representa o evento que está sendo disparado (no caso, o evento de foco). O target é a propriedade do evento que indica o elemento que foi o alvo do evento, ou seja, o elemento que perdeu o foco, neste caso, o campo de CEP. Então, target é uma referência ao próprio campo de CEP.
+        var value = target.value; //Aqui, target é o campo de CEP, como explicado anteriormente. A propriedade value de um campo de entrada (input) contém o valor atual inserido pelo usuário nesse campo. Portanto, value agora contém o valor do CEP que o usuário digitou ou selecionou no campo de entrada de CEP.
+
+        // Construindo a URL da API do ViaCep com o CEP fornecido
+        var url = `https://viacep.com.br/ws/${value}/json/`;
+
+        // Enviando uma requisição assíncrona para a API do ViaCep
+        var response = await fetch(url);
+
+        // Convertendo a resposta da API para o formato JSON
+        var dados = await response.json();
+
+        // Preenchendo os campos do formulário com os detalhes do endereço obtido
+        inputLogradouro.value = dados.logradouro;
+        inputBairro.value = dados.bairro;
+        inputComplemento.value = dados.complemento;
+        inputEstado.value = dados.uf;
+    });
+</script>
+

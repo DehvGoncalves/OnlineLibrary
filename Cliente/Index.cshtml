@@ -1,0 +1,83 @@
+﻿@using ProjetoEmprestimoLivros.Models
+@model IEnumerable<UsuarioModel>
+
+
+@if (TempData["MensagemSucesso"] != null)
+{
+    <div class="alert alert-success text-dark" role="alert">
+        @TempData["MensagemSucesso"]
+    </div>
+}
+
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger text-dark" role="alert">
+        @TempData["MensagemErro"]
+    </div>
+}
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Lista de Clientes!</h2>
+        <a style="width: 150px; margin-right:0px;" asp-controller="Usuarios" asp-action="Cadastrar" asp-route-id="0" class="btn-success btn"><i class="bi bi-plus-circle"></i>Novo Cliente</a>
+    </div>
+
+    <table class="table table-hover" id="registros">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Usuário</th>
+                <th>Nome</th>
+                <th>Estado</th>
+                <th>Email</th>
+                <th>Data de Criação</th>
+                <th>Perfil</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @* Aqui começa algumas verificações *@
+            @if (Model != null)
+            {
+                @if (Model.Count() > 0)
+                {
+                    @foreach (var cliente in Model)
+                    {
+                        <tr>
+                            @if (cliente.Status == true)
+                            {
+                                <td>
+                                    <img src="~/img/Ativo.png" style="width: 25px; height:25px" />
+                                </td>
+                            }
+                            else
+                            {
+                                <td>
+                                    <img src="~/img/Inativo.png" style="width: 25px; height:25px" />
+                                </td>
+                            }
+
+                            <td>@cliente.Usuario</td>
+                            <td>@cliente.NomeCompleto</td>
+                            <td>@cliente.Endereco.Estado</td> @* Para saber o estado do endereço, você precisa acessar o endereço do cliente e pegar o estado pois se trata de um join *@
+                            <td>@cliente.Email</td>
+                            <td>@cliente.DataCadastro.ToString("dd-mm-yyyy")</td>
+                            <td>@cliente.Perfil</td>
+                            <td>
+                                <a asp-controller="Usuarios" asp-action="Detalhes" asp-route-id="@cliente.Id" class="btn-warning btn"><i class="bi bi-file-earmark-zip"></i> Detalhes</a>
+                                <a asp-controller="Usuarios" asp-action="Editar" asp-route-id="@cliente.Id" class="btn-info btn"><i class="bi bi-pencil"></i> Editar</a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="7" class="text-center">Nenhum cliente registrado!</td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,45 @@
+﻿@using ProjetoEmprestimoLivros.Dto.Home
+@model LoginDto
+
+@{
+    Layout = "_LayoutDeslogada";
+}
+
+@if (TempData["MensagemSucesso"] != null)
+{
+    <div class="alert alert-success text-dark" role="alert">
+        @TempData["MensagemSucesso"]
+    </div>
+}
+
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger text-dark" role="alert">
+        @TempData["MensagemErro"]
+    </div>
+}
+
+<div class="container" style="margin-top: 25rem; width: 75rem; background: #dfdfdf; color: black; font-size: 16px; padding: 70px; border-radius: 5px">
+    <form method="post" asp-action="Login" asp-controller="Home">
+        <div class="mb-3">
+            <label>E-mail</label>
+            <input type="Email" class="form-control" asp-for="Email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label>Senha</label>
+            <input type="password" class="form-control" asp-for="Senha" />
+            <span asp-validation-for="Senha" class="text-danger"></span>
+        </div>
+
+        <div class="m-3">
+            <p class="form-label">Não tem conta? <a asp-action="Cadastrar" 
+                asp-controller="Usuarios" asp-route-id="0">Cadastre-se</a></p>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100" style="font-size:16px">Entrar</button>
+
+    </form>
+
+</div>"
