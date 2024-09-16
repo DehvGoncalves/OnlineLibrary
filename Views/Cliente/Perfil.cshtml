@@ -1,0 +1,104 @@
+﻿@using ProjetoEmprestimoLivros.Models
+@model IEnumerable<EmprestimoModel>
+
+@if (TempData["MensagemSucesso"] != null)
+{
+    <div class="alert alert-success text-dark" role="alert">
+        @TempData["MensagemSucesso"]
+    </div>
+}
+
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger text-dark" role="alert">
+        @TempData["MensagemErro"]
+    </div>
+}
+
+<div class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <form method="get" asp-action="Perfil" asp-controller="Cliente" class="d-flex justify-content-center align-items-center mt-5" style="height:40px">
+                <input name="pesquisar" class="form-control mx-2" style="border: 1px solid black; border-radius:10px; width:450px" value="@ViewBag.pesquisar" />
+                <div class="form-check">
+                   
+                    <fieldset>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="filtro" id="optionsRadios1" value="NDevolvidos"
+                            @(ViewBag.filtro == "NDevolvidos" ? "checked" : "") />
+                            <label class="form-check-label" for="optionsRadios1"> Não Devolvidos</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="filtro" id="optionsRadios2" value="Devolvidos"
+                            @(ViewBag.filtro == "Devolvidos" ? "checked" : "") />
+                            <label class="form-check-label" for="optionsRadios2"> Devolvidos</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="filtro" id="optionsRadios3" value="Todos"
+                            @(ViewBag.filtro == "Todos" ? "checked" : "") />
+                            <label class="form-check-label" for="optionsRadios3">Todos</label>
+                        </div>
+                   </fieldset>
+                
+               </div>
+
+                <button type="submit" class="btn btn-primary w-20" style="border-radius:10px">Pesquisar</button>
+            </form>
+        </div>
+
+        @if (ViewBag.filtro == "NDevolvidos")
+        {
+            <h1 class="text-center">Livros não devolvidos</h1>
+        }
+        else if (ViewBag.filtro == "Devolvidos")
+        {
+            <h1 class="text-center">Livros devolvidos</h1>
+        }
+        else if (ViewBag.filtro == "Todos")
+        {
+            <h1 class="text-center">Todos os livros já emprestados</h1>
+        }
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-0">
+            @if (Model.Any())
+            {
+                @foreach (var emprestimo in Model.OrderByDescending(e => e.DataEmprestimo)) @* ordenando por data de emprestimo *@
+                {
+                    var mostrarEmprestimo = ViewBag.filtro == "Todos" ||
+                    (ViewBag.filtro == "NDevolvidos" && emprestimo.DataDevolucao == null) ||
+                    (ViewBag.filtro == "Devolvidos" && emprestimo.DataDevolucao != null);
+
+                    if (mostrarEmprestimo)
+                    {
+                        <div class="card" style="width: 18rem; margin-left: 20px; margin-bottom:20px">
+                            <img src="/Imagens/@emprestimo.Livro.Capa" class="card-img-top" style="width:178px; height:250px">
+                            <div class="card-body">
+                                <h5 class="card-title">@emprestimo.Livro.Titulo</h5>
+                                <p class="card-text">@emprestimo.DataEmprestimo</p>
+                                <p class="card-text">@(emprestimo.DataDevolucao == null ? "Não Devolvido" : emprestimo.DataDevolucao)</p>
+                                <p class="card-text">Cliente: @emprestimo.Usuario.Usuario</p>
+
+                                @if (emprestimo.DataDevolucao == null)
+                                {
+                                    <a class="btn btn-danger w-100" style="font-size: 16px" asp-action="Devolver" asp-controller="Emprestimo" asp-route-id="@emprestimo.Id">Devolver</a>
+                                }
+                                else
+                                {
+                                    //ambos estão certos, pórém o segundo é mais elegante
+@*                                     <button class="btn btn-success w-100" style="font-size: 16px" disabled>DEVOLVIDO</button>
+ *@                                    <button class="btn w-100" style="font-size: 16px; background-color: #28a745; color: white;" disabled>DEVOLVIDO</button>
+                                }
+                            </div>
+                        </div>
+                    }
+                }
+            }
+            else
+            {
+                <p>Nenhum registro localizado!</p>
+            }
+        </div>
+    </div>
+</div>

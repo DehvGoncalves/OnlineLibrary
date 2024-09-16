@@ -18,7 +18,7 @@
 
 <div class="container mt-5">
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <h2>Cadastro de Clientes!</h2>
+        <h2>Lista de Clientes!</h2>
         <a style="width: 150px; margin-right:0px;" asp-controller="Usuarios" asp-action="Cadastrar" asp-route-id="0" class="btn-success btn"><i class="bi bi-plus-circle"></i>Novo Cliente</a>
     </div>
 
@@ -58,7 +58,7 @@
                             }
 
                             <td>@cliente.Usuario</td>
-                            <td>@cliente.NomeCOmpleto</td>
+                            <td>@cliente.NomeCompleto</td>
                             <td>@cliente.Endereco.Estado</td> @* Para saber o estado do endereço, você precisa acessar o endereço do cliente e pegar o estado pois se trata de um join *@
                             <td>@cliente.Email</td>
                             <td>@cliente.DataCadastro.ToString("dd-mm-yyyy")</td>

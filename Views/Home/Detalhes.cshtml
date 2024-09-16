@@ -1,0 +1,69 @@
+﻿@using ProjetoEmprestimoLivros.Models
+@model ProjetoEmprestimoLivros.Models.EmprestimoModel
+
+@{
+    Layout = ViewBag.LayoutPagina;
+}
+
+<div class="container d-flex gap-5 justify-content-center align-items-center mt-5">
+    <div class="img">
+        <img src="/Imagens/@Model.Livro.Capa" style="width:350px; height:550px; border-radius:10px" />
+    </div>
+    <div>
+        <h2 style="font-size:22px">@Model.Livro.Titulo</h2> @* Pegando o livro de EmprestimoModel e entrando nele pra pegar o titulo devido a relação entre as tabelas *@
+        <h3>@Model.Livro.Autor</h3>
+        <p>@Model.Livro.Descricao</p>
+        <h5>Ano publicação: @Model.Livro.AnoPublicacao</h5>
+   
+
+    <div>
+        @*Variãções dos botões de acordo com o perfil do usuário logado *@
+        <p>Quantidade em estoque: @Model.Livro.QuantidadeEmEstoque</p>
+
+        @if (Model.Usuario != null) //usuario logado?
+        {
+            @if (Model.Usuario.Perfil == ProjetoEmprestimoLivros.Enum.PerfilEnum.Cliente) //O usuário logado é do perfil cliente?
+            {
+                @if (ViewBag.Emprestimos != "SemEmprestimos") //O usuário logado tem emprestimos? Dentro de homeDetalhes é verificado se o usuário tem emprestimos e se não tem é colocado a mensagem "SemEmprestimos" se for diferente disso ele entra no if
+                {
+                        @if (Model.Usuario != null && Model.Usuario.Emprestimos != null && Model.Usuario.Emprestimos //Verifica se o usuário logado já está com o livro emprestado
+                       .Where(emprestimo => emprestimo.LivroId == Model.LivroId //Verifica se o livro que o usuário está tentando emprestar é o mesmo que ele já tem emprestado
+                       && emprestimo.DataDevolucao == null //Verifica se o livro que o usuário está tentando emprestar já foi devolvido
+                       && emprestimo.Usuario.Id == ViewBag.UsuarioLogado).Any()) //Verifica se o usuário logado é o mesmo que está tentando emprestar o livro
+                        {
+                            <button class="btn btn-warning w-10" style="border-radius:10px" disabled>
+                                Você já está com esse livro emprestado
+                            </button>
+                        }
+                        else
+                        {
+                            <a class="btn btn-success w-10" style="border-radius:10px"
+                               asp-action="Emprestar" asp-controller="Emprestimo" asp-route-id="@Model.Livro.Id">Emprestar</a>
+                        }
+
+                }
+                else
+                {
+                    <a class="btn btn-success w-10" style="border-radius:10px"
+                    asp-action="Emprestar" asp-controller="Emprestimo" asp-route-id="@Model.Livro.Id">Verificar Emprestar</a>
+                }
+            }
+            else
+            {
+                <a class="btn btn-success w-10" style="border-radius:10px"
+                asp-action="Detalhes" asp-controller="Livro" asp-route-id="@Model.Livro.Id">Verificar Detalhes</a>
+            }
+        }
+        else
+        {
+            <a class="btn btn-success w-10" style="border-radius:10px" 
+            asp-action="Login" asp-controller="Home">
+                É necessário estar logado para emprestar livros!
+            </a>
+        }
+
+        <a class="btn btn-primary w-10" style="border-radius:10px" asp-action="Index" asp-controller="Home">
+            Voltar
+        </a>
+    </div>
+</div>
