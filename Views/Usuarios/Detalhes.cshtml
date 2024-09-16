@@ -1,0 +1,161 @@
+﻿@using ProjetoEmprestimoLivros.Models
+@using ProjetoEmprestimoLivros.Enum
+@model UsuarioModel
+
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" 
+        type="button" role="tab" aria-selected="true" aria-controls="nav-home">Dados - Gerais</button>
+
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+        type="button" role="tab" aria-selected="true" aria-controls="nav-profile">Dados - Endereço</button>
+    </div>
+</nav>
+
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div>
+            <form method="post" asp-action="MudarStatusUsuario" asp-controller="Usuarios">
+                <input type="hidden" asp-for="Id" /> @* Tipo hidden pra que o Id não apareça na tela *@
+
+                @if (Model.Perfil == PerfilEnum.Cliente)
+                {
+                    <h2>Detalhes do Cliente - @Model.NomeCompleto</h2>
+                }
+                else
+                {
+                    <h2>Detalhes do Funcionário - @Model.NomeCompleto</h2>
+
+                }
+
+                <div class="mb-1">
+                    <label>Nome Completo:</label>
+                    @* Disables para que o campo não seja editável *@
+                    <input asp-for="NomeCompleto" type="text" class="form-control shadow-none" disabled />
+                </div>
+
+                <div class="mb-1">
+                    <label>Usuario:</label>
+                    <input asp-for="Usuario" type="text" class="form-control shadow-none" disabled />
+                </div>
+
+                <div class="mb-1">
+                    <label>Email:</label>
+                    <input asp-for="Email" type="email" class="form-control shadow-none" disabled />
+                </div>
+
+                @if (Model.Perfil == PerfilEnum.Funcionario)
+                {
+                    <div class="mb-1">
+                        <label>Cargo:</label>
+                        <input asp-for="Perfil" type="text" class="form-control shadow-none" disabled />
+                    </div>
+
+                    <div class="mb-1">
+                        <label>Turno:</label>
+                        <input asp-for="Turno" type="text" class="form-control shadow-none" disabled />
+                    </div>
+                }
+
+
+                <div class="mb-1">
+                    <label>Status:</label>
+                    <input asp-for="Status" type="text" class="form-control shadow-none" disabled />
+                </div>
+
+                <div class="mb-1">
+                    <label>Data de Cadastro:</label>
+                    <input asp-for="DataCadastro" type="text" class="form-control shadow-none" disabled />
+                </div>
+
+                <div class="mb-1">
+                    <label>Data de Alteração:</label>
+                    <input asp-for="DataAlteracao" type="text" class="form-control shadow-none" disabled />
+                </div>
+
+                <div class="d-flex mt-3">
+                    @if (Model.Status == false)
+                    {
+                        <button type="submit" class="btn btn-success w-100 mt-1"> <i class="bi bi-plus"></i> Ativar Usuário</button>
+                    }
+                    else
+                    {
+                        <button type="submit" class="btn btn-danger w-100 mt-1"> <i class="bi bi-x"></i> Inativar Usuário!</button>
+                    }
+
+                    @if (Model.Perfil == PerfilEnum.Cliente)
+                    {
+                        <a asp-action="Index" asp-controller="Cliente" asp-route-id="0"
+                           class="btn btn-info w-100 mt-1"><i class="bi bi-arrow-left-circle"></i>Voltar</a>
+                    }
+                    else
+                    {
+                        <a asp-action="Index" asp-controller="Funcionario"
+                           class="btn btn-info w-100 mt-1"><i class="bi bi-arrow-left-circle"></i>Voltar</a>
+                    }
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="container mt-5">
+            <form method="post" asp-action="MudarStatusUsuario" asp-controller="Usuarios">
+                <input type="hidden" asp-for="Id" /> @*hidden, não quero que apareça o id, porém quando formos submeter o formulário, queremos que o id seja enviado *@
+                <div class="mb-1">
+                    <label>CEP:</label>
+                    <input asp-for="Endereco.CEP" type="text" class="form-control shadow-none" disabled />
+                </div>
+
+                <div class="mb-1">
+                    <label>Logradouro:</label>
+                    <input asp-for="Endereco.Logradouro" type="text" class="form-control shadow-none" disabled />
+                </div>
+
+                <div class="mb-1">
+                    <label>Número:</label>
+                    <input asp-for="Endereco.Numero" type="text" class="form-control shadow-none" disabled />
+                </div>
+
+                <div class="mb-1">
+                    <label>Bairro:</label>
+                    <input asp-for="Endereco.Bairro" type="text" class="form-control shadow-none" disabled />
+                </div>
+
+                <div class="mb-1">
+                    <label>Estado:</label>
+                    <input asp-for="Endereco.Estado" type="text" class="form-control shadow-none" disabled />
+                </div>
+
+                <div class="mb-1">
+                    <label>Complemento:</label>
+                    <input asp-for="Endereco.Complemento" type="text" class="form-control shadow-none" disabled />
+                </div>
+                <div class="d-flex mt-3">
+
+                    @if (Model.Status == false)
+                    {
+                        <button type="submit" class="btn btn-success w-100 mt-1"> <i class="bi bi-plus"></i> Ativar Usuário</button>
+                    }
+                    else
+                    {
+                        <button type="submit" class="btn btn-danger w-100 mt-1"> <i class="bi bi-x"></i> Inativar Usuário!</button>
+                    }
+
+                    @if (Model.Perfil == PerfilEnum.Cliente)
+                    {
+                        <a asp-action="Index" asp-controller="Cliente" asp-route-id="0"
+                           class="btn btn-info w-100 mt-1"><i class="bi bi-arrow-left-circle"></i>Voltar</a>
+                    }
+                    else
+                    {
+                        <a asp-action="Index" asp-controller="Funcionario"
+                           class="btn btn-info w-100 mt-1"><i class="bi bi-arrow-left-circle"></i>Voltar</a>
+                    }
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
