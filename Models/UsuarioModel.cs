@@ -8,7 +8,7 @@ namespace ProjetoEmprestimoLivros.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        public string NomeCOmpleto { get; set; } = string.Empty;
+        public string NomeCompleto { get; set; } = string.Empty;
         [Required]
         public string Usuario { get; set; } = string.Empty;
         [Required]
@@ -25,6 +25,7 @@ namespace ProjetoEmprestimoLivros.Models
         public byte[] SenhaSalt { get; set; } //Chave de criptografia
         [Required]
         public EnderecoModel Endereco { get; set; }
+        public List< EmprestimoModel>  Emprestimos{ get; set; }
         public DateTime DataCadastro { get; set; } = DateTime.Now;
         public DateTime DataAlteracao { get; set; } = DateTime.Now;
 
